@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODE BY ETHICAL BOY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
+
+        /* असली हैकर मैट्रिक्स बैकग्राउंड डिज़ाइन */
+        body {
+            background-color: #000000;
+            background-image: 
+                linear-gradient(rgba(0, 20, 0, 0.93), rgba(0, 5, 0, 0.97)),
+                radial-gradient(rgba(0, 150, 0, 0.15) 15%, transparent 20%),
+                radial-gradient(rgba(0, 80, 0, 0.1) 15%, transparent 20%);
+            background-size: 100% 100%, 24px 24px, 12px 12px;
+            background-position: 0 0, 0 0, 6px 6px;
+            color: #00ff66;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-shadow: 0 0 2px rgba(0, 255, 100, 0.5);
+            animation: matrixMove 30s linear infinite;
+        }
+
+        @keyframes matrixMove {
+            0% { background-position: 0 0, 0 0, 6px 6px; }
+            100% { background-position: 0 0, 0 500px, 6px 1000px; }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            animation: bootUp 1.2s ease-out;
+        }
+
+        @keyframes bootUp {
+            0% { opacity: 0; transform: scale(0.96); filter: brightness(0.3); }
+            100% { opacity: 1; transform: scale(1); filter: brightness(1); }
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00ff66;
+            padding-bottom: 12px;
+            margin-bottom: 5px;
+            box-shadow: 0 4px 12px rgba(0, 255, 100, 0.1);
+        }
+
+        .header-text h1 {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+        }
+
+        .header-text p {
+            font-size: 12px;
+            color: #00aa44;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logo-circle {
+            width: 46px;
+            height: 46px;
+            background-color: #001a00;
+            border: 2px solid #00ff66;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ff66;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 0 12px #00ff66;
+        }
+
+        .box {
+            background: rgba(5, 15, 5, 0.85);
+            border: 1px solid #005511;
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: inset 0 0 15px rgba(0, 255, 100, 0.05), 0 4px 10px rgba(0,0,0,0.7);
+        }
+
+        .orange-border-box {
+            border: 1px solid #ff6600;
+            box-shadow: inset 0 0 15px rgba(255, 102, 0, 0.1), 0 0 10px rgba(255, 102, 0, 0.2);
+        }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: bold;
+            color: #00ff66;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .input-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ff8833;
+            margin-bottom: 12px;
+        }
+
+        .paste-text {
+            color: #ffffff;
+            background: #ff6600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 0 8px #ff6600;
+        }
+
+        .input-field {
+            width: 100%;
+            background-color: #000a00;
+            border: 1px solid #ff6600;
+            border-radius: 6px;
+            padding: 14px;
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 14px;
+            outline: none;
+        }
+
+        .btn-activate {
+            width: 100%;
+            background: linear-gradient(135deg, #ff6600, #cc4400);
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 12px #ff6600;
+            animation: pulseGlow 2s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 12px #ff6600; }
+            50% { box-shadow: 0 0 25px #ff8833; }
+            100% { box-shadow: 0 0 12px #ff6600; }
+        }
+
+        .server-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .server-info h3 { font-size: 16px; color: #ffffff; margin-bottom: 4px; }
+        .server-info p { font-size: 12px; color: #00aa44; }
+
+        .btn-start {
+            background-color: #002200;
+            color: #00ff66;
+            border: 1px solid #00ff66;
+            border-radius: 6px;
+            padding: 10px 18px;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .support-text { font-size: 12px; color: #00ff66; margin-bottom: 12px; opacity: 0.8; }
+
+        .token-row {
+            display: flex;
+            background-color: #000a00;
+            border: 1px solid #00ff66;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .token-display {
+            flex: 1;
+            padding: 12px;
+            font-size: 13px;
+            color: #00ff66;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-weight: bold;
+        }
+
+        .btn-copy {
+            background-color: #002200;
+            color: #ffffff;
+            border: none;
+            border-left: 1px solid #00ff66;
+            padding: 0 18px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .community-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+        .btn-community {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .btn-telegram { background: linear-gradient(135deg, #0088cc, #006699); }
+        .btn-whatsapp { background: linear-gradient(135deg, #128c7e, #075e54); }
+
+        /* --- वेलकम स्क्रीन और स्टार्ट नाउ बटन डिज़ाइन --- */
+        .ethical-welcome-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            background-image: linear-gradient(rgba(0, 15, 0, 0.95), rgba(0, 5, 0, 0.98));
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999999;
+            padding: 20px;
+        }
+
+        .ethical-welcome-text {
+            font-size: 26px;
+            font-weight: 900;
+            color: #00ff66;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+            animation: cyberGlow 2s infinite alternate;
+            max-width: 90%;
+        }
+
+        @keyframes cyberGlow {
+            0% { text-shadow: 0 0 8px #00ff66, 0 0 15px #00ff66; }
+            100% { text-shadow: 0 0 18px #00ff66, 0 0 30px #00ff66; }
+        }
+
+        .btn-start-now {
+            background: linear-gradient(135deg, #00ff66, #00aa44);
+            color: #000000 !important;
+            border: none;
+            padding: 16px 45px;
+            font-size: 16px;
+            font-weight: 900;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            box-shadow: 0 0 20px #00ff66;
+            transition: all 0.3s ease;
+        }
+
+        .btn-start-now:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px #00ff66;
+        }
+    </style>
+</head>
+<body>
+
+<!-- मुख्य वेरिफिकेशन स्क्रीन -->
+<div class="container" id="mainAppScreen">
+    <div class="header">
+        <div class="header-text">
+            <h1>MODE BY ETHICAL BOY</h1>
+            <p>SYSTEM VERIFICATION CORE</p>
+        </div>
+        <div class="logo-circle">π</div>
+    </div>
+
+    <div class="box orange-border-box">
+        <div class="input-header">
+            <span>[ SYSTEM ACCESS KEY ]</span>
+            <span class="paste-text" onclick="pasteKey()">PASTE</span>
+        </div>
+        <input type="text" class="input-field" id="accessKey" placeholder="Enter secure key...">
+        <button class="btn-activate">🔒 INITIALIZE EXPLOIT</button>
+    </div>
+
+    <div>
+        <div class="section-title">> CHOOSE SECURE NODE</div>
+        <div class="box">
+            <div class="server-row">
+                <div class="server-info">
+                    <h3>Primary Server [LIVE]</h3>
+                    <p>Click start to generate runtime bypass</p>
+                </div>
+                <!-- यहाँ पर आप अपना स्टार्ट टास्क वाला लिंक डाल सकते हैं -->
+                <a href="https://arolinks.com/rc0Qxr" class="btn-start">Start Task</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <p class="support-text">// copy unique verification hash for terminal support:</p>
+        <div class="token-row">
+            <input type="text" class="token-display" id="supportToken" readonly>
+            <button class="btn-copy" onclick="copyToken()">Copy Hash</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="section-title">> ESTABLISH CONNECTION</div>
+        <div class="community-grid">
+            <!-- यहाँ आपका टेलीग्राम लिंक सेट है -->
+            <a href="https://t.me/mod_by_ethicalbo_45" class="btn-community btn-telegram">TELEGRAM</a>
+            <!-- व्हाट्सएप लिंक आप यहाँ डाल सकते हैं -->
+            <a href="https://whatsapp.com/channel/0029VbDVFq12kNFigE8Mw40Q" class="btn-community btn-whatsapp">WHATSAPP</a>
+        </div>
+    </div>
+</div>
+
+<!-- एनिमेटेड वेलकम स्क्रीन ढांचा -->
+<div class="ethical-welcome-page" id="ethicalWelcomeScreen">
+    <div class="ethical-welcome-text">⚡ WELCOME TO MODE BY ETHICAL BOY ⚡</div>
+    <!-- यहाँ आपकी iFrame/वेबसाइट वाला लिंक काम करेगा -->
+    <a href="http://rwa.proextractor.site/" class="btn-start-now">START NOW ➔</a>
+</div>
+<script>
+    // 🔑 अपनी रोज़ की सीक्रेट की (Key) यहाँ सेट करें
+    var CURRENT_LIVE_KEY = "THRILLERHITMAN";
+
+    // हर बार ऐप खुलने पर बिल्कुल अलग रैंडम ID जनरेट करने का फंक्शन
+    function generateHackerId() {
+        const hex = '0123456789abcdef';
+        let id = '';
+        for (let i = 0; i < 32; i++) {
+            id += hex.charAt(Math.floor(Math.random() * hex.length));
+        }
+        return id;
+    }
+
+    // पेज लोड होते ही ऑटोमैटिक सब कुछ मैनेज करना
+    window.onload = function() {
+        // 1. रैंडम ID बॉक्स में दिखाना
+        var tokenBox = document.getElementById('supportToken');
+        if(tokenBox) {
+            tokenBox.value = generateHackerId();
+        }
+
+        // 2. 24 घंटे का टाइमर और बाईपास चेकिंग
+        var loginTime = localStorage.getItem('ethical_boy_session');
+        var currentTime = new Date().getTime();
+        
+        if (loginTime && (currentTime - loginTime > 86400000)) {
+            localStorage.removeItem('ethical_boy_session');
+            loginTime = null;
+        }
+
+        // अगर यूज़र का 24 घंटे का एक्सेस चालू है, तो डायरेक्ट वेलकम पेज दिखाओ
+        if (loginTime && (currentTime - loginTime <= 86400000)) {
+            document.getElementById('mainAppScreen').style.display = 'none';
+            document.getElementById('ethicalWelcomeScreen').style.display = 'flex';
+        }
+
+        // 3. बटन क्लिक करने पर चेकिंग लॉजिक
+        var mainButton = document.querySelector('.btn-activate');
+        if (mainButton) {
+            mainButton.onclick = function() {
+                var inputField = document.getElementById('accessKey');
+                if (!inputField) return;
+
+                var enteredKey = inputField.value.trim();
+
+                if (enteredKey === "") {
+                    alert("कृपया पहले एक्सेस की (Access Key) दर्ज करें!");
+                    return;
+                }
+
+                // अगर की सही है, तो 24 घंटे का लॉक लगाएं और वेलकम स्क्रीन खोलें
+                if (enteredKey === CURRENT_LIVE_KEY) {
+                    alert("सफलतापूर्वक वेरीफाई हो गया! एक्सेस ग्रांटेड...");
+                    localStorage.setItem('ethical_boy_session', new Date().getTime());
+                    
+                    // पहला पेज छुपाकर वेलकम पेज खोलना
+                    document.getElementById('mainAppScreen').style.display = 'none';
+                    document.getElementById('ethicalWelcomeScreen').style.display = 'flex';
+                } else {
+                    alert("गलत एक्सेस की! कृपया 'Start Task' से नई की प्राप्त करें।");
+                }
+            };
+        }
+    };
+
+    // कॉपी हैश फंक्शन
+    function copyToken() {
+        const copyTarget = document.getElementById('supportToken');
+        copyTarget.select();
+        copyTarget.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyTarget.value);
+        alert("Verification Hash Copied!");
+    }
+
+    // डायरेक्ट पेस्ट फंक्शन
+    async function pasteKey() {
+        try {
+            const text = await navigator.clipboard.readText();
+            document.getElementById('accessKey').value = text;
+        } catch (err) {
+            // Permission Fail
+        }
+    }
+</script>
+</body>
+</html>
